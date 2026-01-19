@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 250px; padding: 15px; font-family: sans-serif; }
+    input { width: 100%; margin-bottom: 10px; padding: 8px; box-sizing: border-box;}
+    
+    
+    button { 
+      width: 100%; 
+      padding: 10px; 
+      background-color: #e65100; 
+      color: white; 
+      border: none; 
+      cursor: pointer; 
+      font-weight: bold;
+      border-radius: 4px;
+    }
+    button:hover { opacity: 0.9; }
+
+    
+    .logout-btn { 
+      background-color: #d32f2f; 
+      margin-top: 10px; 
+      display: none; 
+    }
+
+    #status { margin-bottom: 15px; color: #333; font-weight: bold; text-align: center;}
+
+    
+    .coffee-link {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #FFDD00;
+        color: #000;
+        padding: 8px;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 13px;
+        transition: transform 0.1s;
+    }
+    .coffee-link:hover {
+        transform: scale(1.02);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div id="status">Enter Credentials</div>
+  
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+  
+  <button id="saveBtn">SAVE CREDENTIALS</button>
+  <button id="logoutBtn" class="logout-btn">LOGOUT</button>
+
+  <a href="https://www.buymeacoffee.com/lakshraina2" target="_blank" class="coffee-link">
+      ☕ Buy me a Coffee
+  </a>
+
+  <script src="popup.js"></script>
+</body>
+</html>
